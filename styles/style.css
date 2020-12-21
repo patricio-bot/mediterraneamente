@@ -698,6 +698,11 @@ p {
     border-right: 1px solid var(--charleston-green);
   }
 }
+@media screen and (min-width: 900px) {
+  .tendencias-img-container {
+    padding: 4rem;
+  }
+}
 /********** categorias *******/
 .section-categorias {
   display: flex;
@@ -759,6 +764,14 @@ p {
 @media screen and (min-width: 900px) {
   .section-categorias {
     flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .categorias-container img {
+    width: 80%;
+  }
+  .section-categorias {
+    padding: 4rem 0;
   }
 }
 /********* footer *******/
@@ -889,6 +902,12 @@ p {
   }
   .services-wrapper {
     flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-container img {
+    width: 20%;
+    margin-bottom: 2rem;
   }
 }
 /******* sidebar *********/

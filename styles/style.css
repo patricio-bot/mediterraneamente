@@ -28,6 +28,9 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --mid-shadow: 13px 0px 4px 0px rgba(0, 0, 0, 0.5);
   --fixed-width: 1200px;
+  --max-width: 600px;
+  --max-height: 400px;
+
   font-size: 62.5%;
 }
 
@@ -290,9 +293,10 @@ p {
 
 .menu {
   display: none;
+  position: relative;
   flex-direction: column;
   text-align: left;
-  padding: 2rem;
+  padding: 0 2rem;
   max-width: 200px;
 }
 
@@ -306,6 +310,10 @@ p {
   align-items: center;
   padding: 1rem;
   margin-bottom: 2rem;
+  transition: var(--transition);
+}
+.hover {
+  color: var(--battleship-grey);
 }
 
 .subpages {
@@ -317,8 +325,9 @@ p {
   color: var(--charleston-green);
 }
 .slider-wrapper {
-  width: 100vw;
+  width: 100%;
   max-width: var(--fixed-width);
+  height: auto;
   text-align: center;
   position: relative;
 }
@@ -509,11 +518,12 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(37%, -60%);
+  transform: translateX(80%);
   z-index: 3;
   display: none;
   padding: 2rem;
   font-family: var(--roboto);
+  height: auto;
 }
 
 .submenu h4 {
@@ -530,10 +540,14 @@ p {
   max-width: 20rem;
 }
 
-.subpage {
+.subpages {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  transition: var(--transition);
+}
+.subpages:hover {
+  color: var(--battleship-grey);
 }
 .subitems {
   background: red;
@@ -556,13 +570,14 @@ p {
   width: 30%;
 }
 
-.links-container {
+.sub-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   margin-bottom: 2rem;
 }
+
 @media screen and (min-width: 600px) {
   .icon-links {
     width: 20%;
@@ -581,6 +596,7 @@ p {
 }
 .img-products {
   transition: var(--transition);
+  cursor: pointer;
 }
 .img-products:hover {
   transform: scale(1.2);
@@ -939,7 +955,6 @@ p {
   z-index: 9999;
   top: 0;
   left: -1000px;
-  /*  height: 40px; */
   width: 100%;
   background-color: var(--mainWhite);
   display: flex;
@@ -984,8 +999,9 @@ p {
   cursor: pointer;
   text-transform: capitalize;
 }
+
 .sidebar-menu img {
-  width: 30%;
+  width: 20%;
   border-radius: 50%;
   padding: 2rem;
 }
@@ -993,6 +1009,7 @@ p {
   padding: 1rem 2rem;
   font-size: 2rem;
   border-top: 1px solid var(--battleship-grey);
+  cursor: pointer;
 }
 .sidebar-items li {
   transition: var(--transition);
@@ -1010,7 +1027,7 @@ p {
 .underline {
   margin-bottom: 2rem;
   width: 80px;
-  height: 2px;
+  height: 1px;
   background-color: var(--charleston-green);
 }
 @media screen and (min-width: 600px) {
@@ -1031,4 +1048,124 @@ p {
   .sidebar-footer {
     display: none;
   }
+}
+/*********** modal **********/
+
+.modal {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  transition: var(--transition);
+  opacity: 0;
+  min-height: 100vh;
+  overflow: auto;
+}
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--mainWhite);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.next-button,
+.prev-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  font-size: 2rem;
+  color: var(--mainWhite);
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+}
+.close-modal:focus,
+.next-button:focus,
+.prev-button:focus {
+  color: var(--flame);
+}
+.prev-button {
+  left: -3rem;
+}
+.next-button {
+  right: -3rem;
+}
+@media screen and (min-width: 600px) {
+  .next-button,
+  .prev-button,
+  .close-modal {
+    font-size: 3rem;
+  }
+  .next-button {
+    right: -4rem;
+  }
+  .prev-button {
+    left: -4rem;
+  }
+}
+
+.modal-content {
+  width: 80%;
+  margin: 10rem auto 5rem;
+  max-width: var(--max-width);
+  position: relative;
+}
+.modal-content-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 5rem;
+  position: relative;
+}
+.main-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+@media screen and (min-width: 900px) {
+  .modal-content {
+    margin-bottom: 10rem;
+  }
+}
+
+.image-name {
+  text-align: center;
+  margin: 1rem 0 3rem;
+  color: var(--mainWhite);
+  font-family: var(--condensed);
+  text-transform: capitalize;
+}
+.modal-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 1rem;
+}
+.modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.modal-img:hover {
+  opacity: 1;
+}
+.modal-img.selected {
+  opacity: 1;
 }

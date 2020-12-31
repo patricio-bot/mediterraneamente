@@ -84,22 +84,22 @@ const galleryImg = [
         id: '1',
         images: [
             {
-                url: './assets/image 10.png', title: 'bañadores'
+                url: './assets/image 10.png', title: 'bañadores', 'data-id': '1', price: '29.99'
             },
             {
-                url: './assets/swim-1.jpg', title: 'bañadores-1'
+                url: './assets/swim-1.jpg', title: 'bañadores-1', 'data-id': '1.2', price: 35.57
             },
             {
-                url: './assets/swim-2.jpg', title: 'bañadores-2'
+                url: './assets/swim-2.jpg', title: 'bañadores-2', 'data-id': '1.3', price: 35.57
             },
             {
-                url: './assets/swim-3.jpg', title: 'bañadores-3'
+                url: './assets/swim-3.jpg', title: 'bañadores-3', 'data-id': '1.4', price: 35.57
             },
             {
-                url: './assets/swim-4.jpg', title: 'bañadores-4'
+                url: './assets/swim-4.jpg', title: 'bañadores-4', 'data-id': '1.5', price: 35.57
             },
             {
-                url: './assets/swim-5.jpg', title: 'bañadores-5'
+                url: './assets/swim-5.jpg', title: 'bañadores-5', 'data-id': '1.6', price: 35.57
             },
         ]
     },
@@ -107,22 +107,22 @@ const galleryImg = [
         id: '2',
         images: [
             {
-                url: './assets/image 11.png', title: 'vestidos'
+                url: './assets/image 11.png', title: 'vestidos', 'data-id': '2', price: 35.57
             },
             {
-                url: './assets/dress-1.jpg', title: 'vestidos-1'
+                url: './assets/dress-1.jpg', title: 'vestidos-1', 'data-id': '2.2', price: 35.57
             },
             {
-                url: './assets/dress-2.jpg', title: 'vestidos-2'
+                url: './assets/dress-2.jpg', title: 'vestidos-2', 'data-id': '2.3', price: 35.57
             },
             {
-                url: './assets/dress-3.jpg', title: 'vestidos-3'
+                url: './assets/dress-3.jpg', title: 'vestidos-3', 'data-id': '2.4', price: 35.57
             },
             {
-                url: './assets/dress-4.jpg', title: 'vestidos-4'
+                url: './assets/dress-4.jpg', title: 'vestidos-4', 'data-id': '2.5', price: 35.57
             },
             {
-                url: './assets/dress-5.jpg', title: 'vestidos-5'
+                url: './assets/dress-5.jpg', title: 'vestidos-5', 'data-id': '2.6', price: 35.57
             },
         ]
     },
@@ -130,22 +130,22 @@ const galleryImg = [
         id: '3',
         images: [
             {
-                url: './assets/image 12.png', title: 'bolsos'
+                url: './assets/image 12.png', title: 'bolsos', 'data-id': '3', price: 35.57
             },
             {
-                url: './assets/bags-1.jpg', title: 'bolsos-1'
+                url: './assets/bags-1.jpg', title: 'bolsos-1', 'data-id': '3.2', price: 35.57
             },
             {
-                url: './assets/bags-2.jpg', title: 'bolsos-2'
+                url: './assets/bags-2.jpg', title: 'bolsos-2', 'data-id': '3.3', price: 35.57
             },
             {
-                url: './assets/bags-3.jpg', title: 'bolsos-3'
+                url: './assets/bags-3.jpg', title: 'bolsos-3', 'data-id': '3.4', price: 35.57
             },
             {
-                url: './assets/bags-4.jpg', title: 'bolsos-4'
+                url: './assets/bags-4.jpg', title: 'bolsos-4', 'data-id': '3.5', price: 35.57
             },
             {
-                url: './assets/bags-5.jpg', title: 'bolsos-5'
+                url: './assets/bags-5.jpg', title: 'bolsos-5', 'data-id': '3.6', price: 35.57
             },
         ]
     },
@@ -153,22 +153,22 @@ const galleryImg = [
         id: '4',
         images: [
             {
-                url: './assets/image 9.png', title: 'panatalones cortos'
+                url: './assets/image 9.png', title: 'pantalones cortos', 'data-id': '4', price: 35.57
             },
             {
-                url: './assets/shorts-1.jpg', title: 'panatalones cortos-1'
+                url: './assets/shorts-1.jpg', title: 'pantalones cortos-1', 'data-id': '4.2', price: 35.57
             },
             {
-                url: './assets/shorts-2.jpg', title: 'panatalones cortos-2'
+                url: './assets/shorts-2.jpg', title: 'pantalones cortos-2', 'data-id': '4.3', price: 35.57
             },
             {
-                url: './assets/shorts-3.jpg', title: 'panatalones cortos-3'
+                url: './assets/shorts-3.jpg', title: 'pantalones cortos-3', 'data-id': '4.4', price: 35.57
             },
             {
-                url: './assets/shorts-4.jpg', title: 'panatalones cortos-4'
+                url: './assets/shorts-4.jpg', title: 'pantalones cortos-4', 'data-id': '4.5', price: 35.57
             },
             {
-                url: './assets/shorts-5.jpg', title: 'panatalones cortos-5'
+                url: './assets/shorts-5.jpg', title: 'pantalones cortos-5', 'data-id': '4.6', price: 35.57
             },
         ]
     },
@@ -176,22 +176,22 @@ const galleryImg = [
         id: '5',
         images: [
             {
-                url: './assets/image 13.png', title: 'shorts'
+                url: './assets/image 13.png', title: 'shorts', 'data-id': '5', price: 35.57
             },
             {
-                url: './assets/shorts-6.jpg', title: 'shorts-1'
+                url: './assets/shorts-6.jpg', title: 'shorts-1', 'data-id': '5.2', price: 35.57
             },
             {
-                url: './assets/shorts-7.jpg', title: 'shorts-2'
+                url: './assets/shorts-7.jpg', title: 'shorts-2', 'data-id': '5.3', price: 35.57
             },
             {
-                url: './assets/shorts-8.jpg', title: 'shorts-3'
+                url: './assets/shorts-8.jpg', title: 'shorts-3', 'data-id': '5.4', price: 35.57
             },
             {
-                url: './assets/shorts-9.jpg', title: 'shorts-4'
+                url: './assets/shorts-9.jpg', title: 'shorts-4', 'data-id': '5.5', price: 35.57
             },
             {
-                url: './assets/shorts-10.jpg', title: 'shorts-5'
+                url: './assets/shorts-10.jpg', title: 'shorts-5', 'data-id': '5.6', price: 35.57
             },
         ]
     }
@@ -329,31 +329,43 @@ let topMenu = document.querySelector(".sidebar-header");
 let bottomMenu = document.querySelector(".sidebar-footer");
 const toggleBtn = document.querySelector('.toggle-btn');
 const closeBtn = document.querySelector('.close-btn');
+const cartMenu = document.querySelector('.cart-wrapper')
+const cartToggle = document.querySelector('.cart')
+const closeCartBtn = document.querySelector('.close-cart');
 
-
+function openCart() {
+    cartMenu.classList.add('show')
+    navMenu.classList.remove("show");
+    topMenu.classList.remove("show")
+    bottomMenu.classList.remove("show")
+}
+function closeCart() {
+    cartMenu.classList.remove('show')
+}
 function openSidebar() {
     navMenu.classList.add("show");
     topMenu.classList.add("show")
     bottomMenu.classList.add("show")
+    cartMenu.classList.remove('show')
 }
 function closeSidebar() {
     navMenu.classList.remove("show");
     topMenu.classList.remove("show")
     bottomMenu.classList.remove("show")
 }
+closeCartBtn.addEventListener('click', closeCart)
+cartToggle.addEventListener('click', openCart)
 closeBtn.addEventListener('click', closeSidebar)
 toggleBtn.addEventListener("click", openSidebar)
 
 /********** accordion categorias */
 
 const questions = document.querySelectorAll('.accordion-container')
-
 questions.forEach(function (question) {
     const btn = question.querySelector(".accordion-btn");
 
 
     btn.addEventListener("click", function () {
-        console.log(question);
 
         questions.forEach(function (item) {
             if (item !== question) {
@@ -371,11 +383,12 @@ questions.forEach(function (question) {
 const imgBtns = [...document.querySelectorAll('.img-products')]
 const modalImg = document.querySelector('.main-img')
 const modal = document.querySelector('.modal')
-const closeModal = document.querySelector('.close-modal')
+const closeModalBtn = document.querySelector('.close-modal')
 const modalImages = document.querySelector('.modal-images')
 const nextButton = document.querySelector('.next-button')
 const prevButton = document.querySelector('.prev-button')
 const imageName = document.querySelector('.image-name')
+
 
 imgBtns.forEach((btn) => {
     btn.addEventListener('click', function (e) {
@@ -386,45 +399,47 @@ imgBtns.forEach((btn) => {
         if (currentItem) {
 
             const { images } = currentItem
+
+
             setMainImage(mainImg)
             modalImages.innerHTML = images
                 .map(function (image, index) {
 
 
-                    const { url, title } = image
-
+                    const { url, title, 'data-id': id, price } = image
 
                     return `<img src="${url
-                        }" title="${title}" id="${index}" class="${index === 0 ? 'modal-img selected' : 'modal-img'}" alt="${title}"/>`;
+                        }" title="${title}" data-price="${price}" id="${id}" class="${index === 0 ? 'modal-img selected' : 'modal-img'}" alt="${title}"/>`;
                 })
                 .join('');
+
 
         }
 
         modal.classList.add('open')
         modalImages.addEventListener('click', chooseImage)
+
         closeSidebar()
+        closeCart()
 
 
     })
 })
-closeModal.addEventListener('click', () => {
+
+function closeModal() {
     modal.classList.remove('open')
-})
-nextButton.addEventListener('click', () => {
-    nextImage()
+}
+closeModalBtn.addEventListener('click', closeModal)
 
-})
+nextButton.addEventListener('click', nextImage)
 
-prevButton.addEventListener('click', () => {
-    prevImage()
-
-})
+prevButton.addEventListener('click', prevImage)
 
 
 function setMainImage(selectedImage) {
     modalImg.src = selectedImage.src
     imageName.textContent = selectedImage.title
+
 }
 function nextImage() {
     const selected = modalImages.querySelector('.selected')
@@ -450,3 +465,8 @@ function chooseImage(e) {
         e.target.classList.add('selected');
     }
 };
+
+
+
+
+

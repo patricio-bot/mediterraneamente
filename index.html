@@ -51,7 +51,10 @@
         </div>
 
         <div class="cart">
-          <img class="bag" src="./assets/bag.png" alt="bag icon" />
+          <span class="cart-amount">6</span>
+          <div class="bag">
+            <img src="./assets/bag.png" alt="bag icon" />
+          </div>
         </div>
       </div>
       <ul class="nav-menu">
@@ -128,27 +131,27 @@
       </header>
       <section class="products">
         <div class="products-container">
-          <img class="img-products" src="./assets/image 10.png" alt="" data-id="1" title='bañadores'/>
+          <img class="img-products" src="./assets/image 10.png" alt="" data-id="1" id='1' title='bañadores'/>
           <div class="btn-secondary btn-products btn-yellow">bañadores</div>
         </div>
         <div class="products-container">
           <div class="box-1">
-            <img class="img-products" src="./assets/image 11.png" alt="" data-id="2" title='vestidos' />
+            <img class="img-products" src="./assets/image 11.png" alt="" data-id="2" id='2' title='vestidos' />
             <div class="btn-secondary btn-products btn-dark">vestidos</div>
           </div>
           <div class="box-2">
-            <img class="img-products" src="./assets/image 12.png" alt="" data-id="3" title='bolsos' />
+            <img class="img-products" src="./assets/image 12.png" alt="" data-id="3" id='3' title='bolsos' />
             <div class="btn-secondary btn-products btn-green ">bolsos</div>
           </div>
             
           </div>
         </div>
         <div class="products-container">
-          <img class="img-products" src="./assets/image 9.png" alt="" data-id="4" title='pantalones cortos'/>
+          <img class="img-products" src="./assets/image 9.png" alt="" data-id="4" id='4' title='pantalones cortos'/>
           <div class="btn-products btn-brown ">pantalones </br> cortos</div>
         </div>
         <div class="products-container">
-          <img class="img-products" src="./assets/image 13.png" alt="" data-id="5" title='shorts' />
+          <img class="img-products" src="./assets/image 13.png" alt="" data-id="5" id='5' title='shorts' />
           <div class="btn-secondary btn-products btn-green ">shorts</div>
         </div>
       </section>
@@ -157,6 +160,14 @@
           <h2>Tendencias</h2>
         </div>
         <div class="tendencias-wrapper">
+        <div class="tendencias-container">
+          <h4>Jewelry Filled Wedding</h4>
+          <h4>Engagement Crystal Ring</h4>
+          <figure class="tendencias-img-container">
+            <img src="./assets//Rectangle-2.png" alt="collar">
+            <figcaption>39.99€ <span>80.00€</span></figcaption>
+          </figure>
+        </div>
         <div class="tendencias-container">
           <h4>Jewelry Filled Wedding</h4>
           <h4>Engagement Crystal Ring</h4>
@@ -202,7 +213,7 @@
             </div>
             <img src="./assets/woman.png" alt="hoodie">
             <div class="accordion-btn categorias-btn">
-              <p>info <span class="plus-icon">
+              <p>ver más <span class="plus-icon">
                 <i class="far fa-plus-square"></i>
               </span>
               <span class="minus-icon">
@@ -229,7 +240,7 @@
             </div>
             <img src="./assets/acc.png" alt="bolso">
             <div class="accordion-btn categorias-btn">
-              <p>info <span class="plus-icon">
+              <p>ver más <span class="plus-icon">
                 <i class="far fa-plus-square"></i>
               </span>
               <span class="minus-icon">
@@ -256,7 +267,7 @@
             </div>
             <img src="./assets/calzado.png" alt="calzado">
             <div class="accordion-btn categorias-btn">
-              <p>info <span class="plus-icon">
+              <p>ver más <span class="plus-icon">
                 <i class="far fa-plus-square"></i>
               </span>
               <span class="minus-icon">
@@ -283,7 +294,7 @@
             </div>
             <img src="./assets/hombre.png" alt="camisa">
             <div class="accordion-btn categorias-btn">
-              <p>info <span class="plus-icon">
+              <p>ver más <span class="plus-icon">
                 <i class="far fa-plus-square"></i>
               </span>
               <span class="minus-icon">
@@ -310,7 +321,7 @@
             </div>
             <img src="./assets/baby.png" alt="ropa bebe">
             <div class="accordion-btn categorias-btn">
-              <p>info <span class="plus-icon">
+              <p>ver más <span class="plus-icon">
                 <i class="far fa-plus-square"></i>
               </span>
               <span class="minus-icon">
@@ -420,7 +431,7 @@
             </ul>
           </div>
           <div  class="services-copy">
-              <p>Copyright &copy; 2020</p>
+              <p>Copyright &copy; 2020 &nbsp;</p>
               <p>Mediterraneamente</p>
           </div>
         </div>
@@ -486,8 +497,8 @@
     <!-- sidebar -->
 
   
-    <div class="sidebar-wrapper">
-      <div class="sidebar-header">
+    <div class=" aside-wrapper sidebar-wrapper">
+      <div class="aside-header sidebar-header">
         <i class="fas fa-times close-btn"></i>
         <h2 class="title">mediterraneamente</h2>
       </div>
@@ -500,7 +511,7 @@
             </div>
             
             <div class="accordion-btn sidebar-menu">
-              <img src="./assets/woman.png" alt="hoodie">
+              <img src="./assets/wedding-dress.png" alt="hoodie">
               <h2>mujer 
             </h2>
             </div>
@@ -519,7 +530,7 @@
           </div>
           <div class="accordion-container">  
             <div class="accordion-btn sidebar-menu">
-              <img src="./assets/hombre.png" alt="camisa">
+              <img src="./assets/polo-shirt.png" alt="camisa">
               <h2>hombre 
             </h2>
             </div>
@@ -538,7 +549,7 @@
           </div>
           <div class="accordion-container">  
             <div class="accordion-btn sidebar-menu">
-              <img src="./assets/acc.png" alt="bolsa">
+              <img src="./assets/wedding-ring.png" alt="bolsa">
               <h2>accesorios 
             </h2>
             </div>
@@ -557,7 +568,26 @@
           </div>
           <div class="accordion-container">  
             <div class="accordion-btn sidebar-menu">
-              <img src="./assets/calzado.png" alt="calzado">
+              <img src="./assets/lipstick.png" alt="lipstick icon">
+              <h2>belleza 
+            </h2>
+            </div>
+            <div class="accordion-content sidebar-items">
+              <ul>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+                <li>Cremas Faciales</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-container">  
+            <div class="accordion-btn sidebar-menu">
+              <img src="./assets/shoe.png" alt="calzado">
               <h2>calzado 
             </h2>
             </div>
@@ -576,7 +606,7 @@
           </div>
           <div class="accordion-container">  
             <div class="accordion-btn sidebar-menu">
-              <img src="./assets/baby.png" alt="bebe">
+              <img src="./assets/baby-face.png" alt="bebe">
               <h2>niños 
             </h2>
             </div>
@@ -604,13 +634,153 @@
             <h2>Contacto</h2>
             <div class="underline"></div>
           </div>
+          <div class="more-info">
+            <div class="accordion-container">
+              <div class="accordion-btn">
+                <h2>+ info</h2>
+              </div>
+              <div class="accordion-content">
+                <ul>
+                  <li>Nosotros</li>
+                  <li>Contactanos</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
   
       </div>
-      <div class="sidebar-footer">
+      <div class="aside-footer sidebar-footer">
         <div class="btn-primary">login</div>
         <div class="btn-primary">alta</div>
       </div>
     </div>
+
+   <!--  cart -->
+<div class="aside-wrapper cart-wrapper">
+  <div class="aside-header cart-header">
+    <i class="fas fa-times close-btn close-cart"></i>
+    <h2 class="title">mediterraneamente</h2>
+  </div>
+  <div class="cart-content">
+
+    <div class="cart-item" data-id="">
+      <img src="./assets/swim-1.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Striped swimsuit</h2>
+        <p class="cart-item-price" data-price="">€29.98</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="cart-item" data-id="">
+      <img src="./assets/bags-2.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Pink bag</h2>
+        <p class="cart-item-price" data-price="">€45.89</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="cart-item" data-id="">
+      <img src="./assets/shorts-2.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Shorts denim</h2>
+        <p class="cart-item-price" data-price="">€15.78</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="cart-item" data-id="">
+      <img src="./assets/dress-3.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Summer dress</h2>
+        <p class="cart-item-price" data-price="">€58.98</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="cart-item" data-id="">
+      <img src="./assets/swim-3.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Surfing swimsuit</h2>
+        <p class="cart-item-price" data-price="">€70.98</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="cart-item" data-id="">
+      <img src="./assets/swim-4.jpg" alt="name" class="cart-item-img">
+      <div>
+        <h2 class="cart-item-name">Leopard swimsuit</h2>
+        <p class="cart-item-price" data-price="">€24.67</p>
+        <button class="cart-item-remove-btn">remove</button>
+      </div>
+      <div>
+        <button class="cart-item-increase-btn" data-id="">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+        <p class="cart-item-amount">1</p>
+        <button class="cart-item-decrease-btn" data-id="">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div class="aside-footer cart-footer">
+    <div class="cart-total">
+      total: € 246.28
+    </div>
+    <div class="btn-primary">checkout</div>
+   
+  </div>
+</div> 
 
     
    <!--  modal -->
@@ -626,7 +796,12 @@
           <button class="next-button">
             <i class="fas fa-chevron-right"></i>
           </button>
+          <div class="add-cart-container">
           <img class="main-img" src="./assets/swim-1.jpg" alt="swimsuit">
+          
+           
+          </div>
+         
         </div>
         
         <h3 class="image-name">image name</h3>

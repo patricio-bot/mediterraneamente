@@ -1093,6 +1093,7 @@ p {
   box-shadow: var(--left-shadow);
   background-color: var(--mainWhite);
   opacity: 0;
+  z-index: 99999;
 }
 .cart-wrapper.show {
   opacity: 1;

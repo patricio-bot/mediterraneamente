@@ -382,7 +382,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  width: 8%;
+  width: 5%;
   height: 15%;
   padding: 0.2rem;
   border: transparent;
@@ -434,6 +434,9 @@ p {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 600px) {
+  .btn {
+    width: 8%;
+  }
   .btn-link {
     padding: 2rem 3rem;
     font-size: 1.6rem;
@@ -477,21 +480,24 @@ p {
     left: 8rem;
   }
   .deals {
-    width: 20%;
-    padding: 2rem 0;
+    width: 35%;
+    padding: 4rem;
   }
   .btn {
     width: 4%;
   }
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
   .deals {
-    padding: 4rem;
-  }
-  .deal-container {
-    width: 80%;
+    width: 30%;
   }
 }
+@media screen and (min-width: 1800px) {
+  .deals {
+    width: 20%;
+  }
+}
+
 /******** links ********/
 .submenu {
   background: var(--mainWhite);

@@ -1033,8 +1033,11 @@ p {
   grid-template-columns: auto 1fr;
   column-gap: 2rem;
   align-items: center;
+  transition: var(--transition);
 }
-
+.sidebar-menu:hover {
+  padding-left: 2.8rem;
+}
 .sidebar-menu img {
   width: 50px;
   height: auto;

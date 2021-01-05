@@ -618,21 +618,30 @@ p {
 .btn-yellow {
   background-color: var(--mainYellow);
   color: var(--mainWhite);
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
 }
 .btn-dark {
   background-color: var(--charleston-green);
   color: var(--mainWhite);
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
 }
 .btn-green {
   background-color: var(--mainGreen);
   color: var(--mainWhite);
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
 }
 .btn-brown {
   position: absolute;
   background-color: var(--mainBrown);
   color: var(--mainWhite);
   top: 50%;
-  right: 1rem;
+  left: 1rem;
   text-align: left;
 }
 @media screen and (min-width: 600px) {
@@ -642,6 +651,15 @@ p {
   }
   .products-container {
     width: 50%;
+  }
+  .btn-brown {
+    right: 1rem;
+    left: initial;
+  }
+  .btn-yellow,
+  .btn-green {
+    right: initial;
+    left: 1rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -779,6 +797,13 @@ p {
   font-size: 1.8rem;
   padding: 1rem 0 1.5rem 0;
   border-top: 1px solid var(--charleston-green);
+}
+.categorias-content li {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.categorias-content li:hover {
+  padding-left: 1rem;
 }
 /*******accordion*******/
 .accordion-content {
@@ -962,10 +987,45 @@ p {
   background-color: transparent;
   color: var(--flame);
   padding: 0.7rem 4rem;
-  border: 1px solid var(--flame);
   font-family: var(--condensed);
   text-transform: uppercase;
   font-size: 1.6rem;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid var(--flame);
+}
+
+.btn-primary::before,
+.btn-primary::after {
+  position: absolute;
+  content: "";
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+}
+.btn-primary::after {
+  bottom: 0;
+  right: 0;
+}
+.btn-primary::before {
+  top: 0;
+  left: 0;
+}
+.btn-primary:hover::before,
+.btn-primary:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.btn-primary:hover::before {
+  border-top-color: var(--flame);
+  border-right-color: var(--flame);
+  transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+.btn-primary:hover::after {
+  border-bottom-color: var(--flame);
+  border-left-color: var(--flame);
+  transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s,
+    height 0.3s ease-out 1s;
 }
 .aside-wrapper {
   min-height: 100vh;

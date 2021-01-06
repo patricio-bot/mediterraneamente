@@ -229,7 +229,7 @@ p {
   transition: var(--transition);
 }
 .close-btn:hover {
-  transform: rotateZ(140deg);
+  transform: rotate(0.5turn);
   color: var(--flame);
 }
 .nav-button {
@@ -1263,10 +1263,15 @@ p {
   right: 1.5rem;
   font-size: 2rem;
   color: var(--mainWhite);
-  background: transparent;
-  border-color: transparent;
+  background: none;
+  border: none;
   cursor: pointer;
   outline: none;
+  transition: var(--transition);
+}
+.close-modal:hover {
+  transform: rotate(0.5turn);
+  color: var(--flame);
 }
 
 .next-button,
@@ -1282,10 +1287,11 @@ p {
   outline: none;
   transition: var(--transition);
 }
-.close-modal:focus,
+
 .next-button:focus,
 .prev-button:focus {
   color: var(--flame);
+  outline: none;
 }
 .prev-button {
   left: -3rem;
